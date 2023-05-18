@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW 4</title>
+    <style>
+        body {
+            background-color: #c0f4f8;
+        }
+
+        header {
+            background-color: #8ddbff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Homework 4</h1>
+
+        <ol><b> HW4 Requirements:</b>
+            <li>Create a form, add inputs and buttons.</li>
+            <li>Implement it with "Form Action: Get and Post" methods with different <b>target</b> attributes</li>
+            <li>Implement a simple canvas application in HTML5</li>
+        </ol>
+
+        <hr>
+    </header>
+
+    <div>
+        <form action="index.html" method="get">
+            <h2>Sign in</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>E-mail</th>
+                        <th>Password</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="text" name="email">
+                            <input type="reset" value="reset">
+                        </td>
+                        <td>
+                            <input type="password" name="pass">
+                            <input type="reset" value="reset">
+                        </td>
+
+                    </tr>
+                </tbody>
+
+            </table><br>
+            <input type="submit" value="sign in!">
+        </form>
+        <hr>
+
+        <form action="index.html" method="post">
+            <h2>Register</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>Email</th>
+                        <th>Phone number</th>
+                        <th>Birthday</th>
+                        <th>Gender</th>
+                        <th>Password</th>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><input type="text" name="name"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="tel"></td>
+                        <td><input type="date"></td>
+                        <td>
+                            <input type="radio" name="female" value="female">female
+                            <input type="radio" name="male" value="male">male
+                        </td>
+                        <td><input type="password"></td>
+                    </tr>
+                </tbody>
+            </table><br>
+            <input type="submit" value="sign up!"><br><br><br>
+
+        </form>
+    </div>
+<h3>Something random made with canvas tags:</h3>
+    <canvas id="myCanvas" width="800" height="100" style="border:1px solid #110240;">
+    </canvas>
+
+    <script>
+        
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0, 0);
+        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+        ctx.lineTo(800, 100);
+        ctx.stroke();
+    </script>
+</body>
+
+</html>

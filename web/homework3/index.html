@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Exprimenting with all input tags and discovering about what meta tags are">
+    <meta name="keywords" content="HTML, CSS, Meta, Input tags">
+    <meta name="author" content="Sena Üstün">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW 3</title>
+    <style>
+        body {
+            background-color: #c0f4f8;
+        }
+
+        header {
+            background-color: #8ddbff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Homework 3</h1>
+
+        <ol><b> HW3 Requirements:</b>
+            <li>Use all input types in HTML5</li>
+            <li>Explore the concept of <b>Meta</b> (meta tags are all used in html code)</li>
+            <li>Give examples</li>
+        </ol>
+        <hr>
+    </header>
+    <form action="index.html" method="get">
+        <h2>All input types</h2>
+        <ul>
+            <li><label>button</label></li>
+            <input type="button" value="button">
+            <br><br>
+
+            <li><label>reset</label></li>
+            <input type="reset" value="reset">
+            <br><br>
+
+            <li><label>submit button</label></li>
+            <input type="submit" value="submit">
+            <br><br>
+
+            <li><label>pick a file</label></li>
+            <input type="file" name="file" id="file">
+            <br><br>
+
+            <li><label for="pic">image - use image as button</label></li>
+            <input type="text" name="pic" id="pic" placeholder="Example"><br>
+            <input type="image"  border-radio name="button" src="button.png" alt="send button ;>" value="submit" width="40px">
+            <br><br>
+
+            <li><label>checkbox - multiple choices</label></li>
+            <input type="checkbox" name="box" value="1"> box 1
+            <input type="checkbox" name="box" value="2"> box 2
+            <input type="checkbox" name="box" value="3"> box 3
+            <br><br>
+
+            <li><label>radio - multiple option</label></li>
+            <input type="radio" name="option" value="1">opition 1 <br> 
+            <input type="radio" name="option" value="2">opition 2 <br>
+            <input type="radio" name="option" value="3">opition 3 <br>
+            <br><br>
+
+            <li><label>color picker</label></li>
+            <input type="color" name="color" id="colorpicker">
+            <br><br> 
+            <hr>
+            <li><label>date</label></li>
+            <input type="date" name="" id="">
+            <br><br>
+
+            <li><label>date and time</label></li>
+            <input type="datetime-local" name="" id="">
+            <br><br>
+
+            <li><label>month</label></li>
+            <input type="month" name="" id="">
+            <br><br>
+
+            <li><label>week</label></li>
+            <input type="week" name="" id="">
+            <br><br>
+
+            <li><label>time</label></li>
+            <input type="time" name="" id="">
+            <br><br>
+            <hr>
+            <li><label>e-mail</label></li>
+            <input type="email" name="email" id="email" placeholder="Enter email adress">
+            <br><br>
+
+            <li><label>number</label></li>
+            <input type="number" name="number" id="number" placeholder="Enter a number">
+            <br><br>
+
+            <li><label>password</label></li>
+            <input type="password" name="password" id="password" placeholder="Password">
+            <br><br>
+
+            <li><label>search</label></li>
+            <input type="search" name="search" id="search" placeholder="Enter a word to search">
+            <br><br>
+
+            <li><label>tel</label></li>
+            <input type="tel" name="tel" id="tel" placeholder="+***/***/***/**/**">
+            <br><br>
+
+            <li><label>text</label></li>
+            <input type="text" name="text" id="text" placeholder="Enter a text">
+            <br><br>
+
+            <li><label>url</label></li>
+            <input type="url" name="url" id="url" placeholder="Enter a URL">
+            <br><br>
+            <hr>
+            <li><label for="text">hidden</label></li>
+            Here is a hidden value, try to submit something random <br>
+            <input type="text" name="text">
+            <input type="hidden" name="hiddenvalue" value="hidden">
+            <input type="submit" value="submit" name="button">
+            <br><br>
+
+            <li><label>range</label></li>
+            <input type="range" name="volume">
+
+        </ul>
+    </form>
+
+
+</body>
+
+</html>
